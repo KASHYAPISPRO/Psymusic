@@ -12,7 +12,10 @@
 #
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
+#---------------------------------------------------------------------------#
+#this is getting lame 
+#this is modified as PSYMUSIC </property of @psyrex />
+""" PSYMUSIC R0 """
 
 import json
 import os
@@ -66,7 +69,7 @@ async def playlist(client, message):
       lel = await client.get_chat(message.chat.id)
       lol = lel.linked_chat.id
     except:
-      message.reply("Is this cat even linked?")
+      message.reply("Is this chat even linked?")
       return
     global que
     queue = que.get(lol)
@@ -119,7 +122,7 @@ def r_ply(type_):
         [
             [
                 InlineKeyboardButton("⏹", "cleave"),
-                InlineKeyboardButton("⏸", "cpuse"),
+                InlineKeyboardButton("⏸", "cpause"),
                 InlineKeyboardButton("▶️", "cresume"),
                 InlineKeyboardButton("⏭", "cskip"),
             ],
@@ -211,7 +214,7 @@ async def p_cb(b, cb):
 
 
 @Client.on_callback_query(
-    filters.regex(pattern=r"^(cplay|cpause|cskip|cleave|cpuse|cresume|cmenu|ccls)$")
+    filters.regex(pattern=r"^(cplay|cpause|cskip|cleave|cpause|cresume|cmenu|ccls)$")
 )
 @cb_admin_check
 async def m_cb(b, cb):
@@ -292,7 +295,7 @@ async def m_cb(b, cb):
         else:
             callsmusic.pytgcalls.resume_stream(chet_id)
             await cb.answer("Music Resumed!")
-    elif type_ == "cpuse":
+    elif type_ == "cpause":
         if (chet_id not in callsmusic.pytgcalls.active_calls) or (
             callsmusic.pytgcalls.active_calls[chet_id] == "paused"
         ):
@@ -312,7 +315,7 @@ async def m_cb(b, cb):
             [
                 [
                     InlineKeyboardButton("⏹", "cleave"),
-                    InlineKeyboardButton("⏸", "cpuse"),
+                    InlineKeyboardButton("⏸", "cpause"),
                     InlineKeyboardButton("▶️", "cresume"),
                     InlineKeyboardButton("⏭", "cskip"),
                 ],
@@ -469,7 +472,7 @@ async def play(_, message: Message):
         )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/f6086f8909fbfeb0844f2.png"
+        thumb_name = "https://te.legra.ph/file/a47605297a6da94ce0c03.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -577,7 +580,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"#⃣ Your requested song **queued** at position {position}!",
+            caption=f"#⃣ Your requested song is **queued** at position {position}!",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -623,7 +626,7 @@ async def jiosaavn(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "DaisyMusic"
+        user.first_name = "PsyMusic"
     usar = user
     wew = usar.id
     try:
@@ -657,7 +660,7 @@ async def jiosaavn(client: Client, message_: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your channel due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add @DaisyXmusic to your Group and try again</b>",
+                        "\n\nOr manually add  to your Group and try again</b>",
                     )
     try:
         await USER.get_chat(chid)
@@ -681,10 +684,10 @@ async def jiosaavn(client: Client, message_: Message):
         sname = songs.result[0].song
         slink = songs.result[0].media_url
         ssingers = songs.result[0].singers
-        sthumb = "https://telegra.ph/file/f6086f8909fbfeb0844f2.png"
+        sthumb = "https://te.legra.ph/file/a47605297a6da94ce0c03.png"
         sduration = int(songs.result[0].duration)
     except Exception as e:
-        await res.edit("Found Literally Nothing!, You Should Work On Your English.")
+        await res.edit("Found Literally Nothing!,like yours crush's felling for you /nYou Should Work On Your English 👀👀 my proooooooo.")
         print(str(e))
         return
     keyboard = InlineKeyboardMarkup(
