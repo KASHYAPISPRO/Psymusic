@@ -1,13 +1,3 @@
-
-
-
-
-
-""""" Sophia Music v6 """""
-
-
-
-
 from typing import Union
 
 from pyrogram.types import Audio, Message, Voice
