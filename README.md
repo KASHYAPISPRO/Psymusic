@@ -1,7 +1,8 @@
-<h2 align="centre">Sophia Music v6 🎵</h2>
+
+<h2 align="centre">PsyMusic R1 🎵</h2>
 
 <p align="center">
-  <img src="https://telegra.ph/file/0d4d4006f186c84be2810.jpg">
+  <img src="https://te.legra.ph/file/6a7e177f066196e8d8669.jpg">
 </p>
 
 <h3>Requirements 📝</h3>
@@ -28,11 +29,11 @@
 - `/pause` - pause song play
 - `/resume` - resume song play
 - `/skip` - play next song
-- `/end` - stop music play
+- `/end` - kills playing song
 
 
 ### Commands for Sudo Users ⚔️
-- `/userbotleaveall` - remove assistant from all chats
+- `/userbotleaveall` - removes assistant from all chats
 - `/gcast <reply to message>` - globally brodcast replied message to all chats
 - `/pmpermit [on/off]` - enable/disable pmpermit message
 
@@ -47,6 +48,7 @@
 ## Credits
 - DaisyXMusic 
 - Callmusic 
+- this is forked from dihanofficial/sophiamusic-v6
 
 #### Contributors
 - [Dihan Randila](https://github.com/dihanofficial): Dev / Owner
@@ -55,8 +57,8 @@
 #### Special Credits
 - [Roj Serbest](http://github.com/rojserbest): Callsmusic Developer
 
-This bot is based on the original work done by [Rojserbest](http://github.com/rojserbest). Without his hardwork SophiaMusic won t exist. 
-SophiaXMusic is a modified version of [Callsmusic](https://github.com/callsmusic/callsmusic) for fit the needs of some users
+This bot is based on the original work done by [Rojserbest](http://github.com/rojserbest),and sophiamusic Without thier hardwork psyMusic won't exist. 
+Psymusic is a modified version of [Callsmusic](https://github.com/callsmusic/callsmusic) fit for my need
 
 - [StarkGang](https://github.com/StarkGang/)
 - [SpEcHiDe](https://github.com/SpEcHiDe/)
@@ -73,4 +75,4 @@ SophiaXMusic is a modified version of [Callsmusic](https://github.com/callsmusic
 
 > This project exists thanks to these awesome developers and their codes and contributions.
 > And credits goes to all who supported, all who helped and API & environmental requirement package devs and all projects helped in making this project.
-> Special thanks to you for using bot
+> i did nothing else than changing strings for my need
