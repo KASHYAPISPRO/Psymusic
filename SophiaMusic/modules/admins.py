@@ -13,8 +13,11 @@
 #
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
+#--------------------------------------------------------------------------#
+# how many times i have to say this is psymusic
+#aaaaaaaaaaah i cry T_T
 
-""" Sophia Music v6 """
+""" Psymusic R0 """
 
 from asyncio import QueueEmpty
 from SophiaMusic.config import que
@@ -84,7 +87,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(chat_id)
-        await message.reply_text("❌ Stopped streaming!")
+        await message.reply_text("❌ Killed streaming!")
 
 
 @Client.on_message(command("skip") & other_filters)
