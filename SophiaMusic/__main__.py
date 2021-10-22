@@ -13,7 +13,9 @@
 #
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
+#-------------------------------------------------------------------------#
+#psy too lazy to change these in code comments
+#this is Psymusic under @thepsyrex and rest is same as above
 
 import requests
 from pyrogram import Client as Bot
