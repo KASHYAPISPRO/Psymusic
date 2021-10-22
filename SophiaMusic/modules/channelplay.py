@@ -687,7 +687,7 @@ async def jiosaavn(client: Client, message_: Message):
         sthumb = "https://te.legra.ph/file/a47605297a6da94ce0c03.png"
         sduration = int(songs.result[0].duration)
     except Exception as e:
-        await res.edit("Found Literally Nothing!,like yours crush's felling for you /nYou Should Work On Your English 👀👀 my proooooooo.")
+        await res.edit("Found Literally Nothing!,like yours crush's felling for you \n\nYou Should Work On Your English 👀👀 my proooooooo.")
         print(str(e))
         return
     keyboard = InlineKeyboardMarkup(
