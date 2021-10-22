@@ -1,5 +1,5 @@
 
-<h2 align="centre">PsyMusic R1 🎵</h2>
+<h2 align="centre">PsyMusic R0 🎵</h2>
 
 <p align="center">
   <img src="https://te.legra.ph/file/6a7e177f066196e8d8669.jpg">
